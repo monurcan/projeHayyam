@@ -1,0 +1,215 @@
+.he {
+	background: #30a78f;
+	color: #fff;
+	padding: 48px 0 12px 12px;
+}
+
+.he h1 {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.he .button {
+	float: right;
+	background: #1abc9c;
+	padding: 10px 12px;
+	margin-right: 12px;
+	margin-top: -22px;
+	cursor: pointer;
+	font-size: 13.4px;
+	height: 14px;
+}
+
+.he .button span {
+	font-weight: bold;
+	font-size: 18px;
+	float: left;
+	margin-right: 12px;
+	margin-top: -2px;
+	border-right: 1px solid #fff;
+	padding-right: 8px;
+}
+
+.he .button:hover {
+	background: #21c4a3
+}
+.container {
+	padding-bottom: 25px
+}
+.container > ul.deta {
+	font-size: 13px;
+	width: 100%;
+	height: 30px;
+	display: block;
+	border-bottom: 1px solid #c4c4c4;
+	padding: 10px 0;
+}
+
+.container > ul.deta li {
+	float: left;
+	padding: 8px 15px;
+	border-right: 1px solid #c4c4c4;
+}
+
+.container > ul.deta li:nth-child(4) span:after {
+	padding: 3px 5px;
+	background: #e74c3c;
+	margin-right: 3px;
+	color: #fff;
+	content: 'azimli';
+}
+
+.container > ul.deta li:nth-child(4) span:nth-child(2):after{
+	content: 'başarılı';
+	background: #f1c40f
+}
+
+.container > ul.deta li:nth-child(4) span:nth-child(3):after{
+	content: 'usta';
+	background: #9b59b6
+}
+
+.container > ul.deta li:nth-child(4) span:nth-child(4):after{
+	content: 'hayyam';
+	background: #2ecc71
+}
+.container > ul.deta li:nth-child(2) i {
+	overflow: hidden;
+	height: 11px;
+	max-width: 100px;
+	display: inline-block;
+}
+.container > ul.deta li:nth-child(4){
+	padding-right: 0;
+	margin-right: -2px;
+	max-width: 365px;
+	overflow-x: auto;
+	overflow-y: none;
+    white-space: nowrap;
+	border: 0
+}
+
+.container > ul.deta li:nth-child(4)::-webkit-scrollbar { 
+    display: none; 
+}
+
+.container > ul.deta li:nth-child(5){
+	border: 0;
+	width: 0;
+	padding-top: 6px;
+	float: right;
+	margin-right: 137px
+}
+
+.slv, .ab, .fr {
+	padding: 19px;
+	font-size: 15px;
+	width: 100%;
+	background: #f9f9f9;
+	overflow: hidden;
+	border-bottom: 5px solid #9b59b6;
+	margin-top: 14px;
+	height: 150px;
+}
+
+.slv h3, .ab h3, .fr h3 {
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-size: 18px;
+	color: #9b59b6;
+}
+
+.ab {
+	width: 250px;
+	float: left;
+}
+
+.ab .p {
+	line-height: 18px;
+	overflow: hidden;
+}
+
+.ab .p span {
+	float: right;
+	background: #F9F9F9;
+	margin-top: 118px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.fr {
+	border-color: #e74c3c;
+	width: 660px;
+	float: right;
+}
+
+.fr h3 {
+	color: #e74c3c;
+	margin-bottom: 7px;
+}
+.fr ul {
+	height: auto;
+	padding-bottom: 12px
+}
+.fr ul li {
+	display: inline-block;
+	margin-right: 8.9px;
+	margin-bottom: 13px
+}
+
+.fr ul li img {
+	width: 78px;
+	border: 2px solid #3F4245;
+}
+
+.fr ul li span {
+	width: 78px;
+	background: #3F4245;
+	color: #fff;
+	display: block;
+	border: 2px solid #3F4245;
+	text-align: center;
+	margin-top: -2px;
+}
+
+.fr ul li.sm {
+	width: 82px;
+	height: 91px;
+	padding-top: 40px;
+	text-align: center;
+	float: right;
+	background: #3498db;
+	color: #fff;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.slv {
+	border-color: #f1c513;
+	height: auto;
+	overflow-y: auto;
+	overflow-x: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.slv table tr:nth-child(1){
+	display: none;
+}
+
+.slv h3 {
+	color: #f1c513;
+	margin-bottom: 10px
+}
+
+.slv .ns, .fr .ns {
+	background: #ededed;
+	padding: 32px;
+	text-align: center;
+}
+
+.fr .ns {
+	margin-top: 20px;
+}

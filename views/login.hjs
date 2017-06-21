@@ -1,0 +1,9 @@
+<div class="s"><div class="container">
+<h1>GİRİŞ YAP</h1>
+<form method="POST">
+	<input type="text" name="uname" placeholder="Kullanıcı adı" autofocus><hr>
+	<input type="password" name="pass" placeholder="Şifre">
+	<input value="GİRİŞ YAP" type="submit">
+</form>
+<span><a href="/register">Kayıt Ol</a> &#8226; <a href="/register">Şifremi Unuttum</a></span>
+</div></div>

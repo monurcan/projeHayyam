@@ -1,0 +1,31 @@
+<div class=container>
+	<h4>{{problem.title}} <i>{{sta}}</i><span><script>if({{problem.id}} != 1){document.write('<a href="/problem/'+({{problem.id}}-1)+'"><</a>');}document.write('<a href="/problem/'+({{problem.id}}+1)+'">></a>')</script></span></h4>
+	<ul class="deta">
+		<li>Yayınlanma Tarihi: {{problem.created}}</li>
+		<li>Çözülme Sayısı: {{problem.solved}}</li>
+		<li>Görüntülenme: {{problem.hit}}</li>
+		<li>
+			{{#problem.tags}}
+			<a href="/search?src=[{{name}}]" class="tag {{css}}">{{name}}</a>
+			{{/problem.tags}}
+		</li>
+		<li>{{problem.diff}}</li>
+	</ul>
+	<div class="p">
+		{{{problem.content}}}
+	</div>
+	{{#user}}
+	<script>
+		if('{{sta}}' == ''){
+			document.write('<div class="button sa" data-id="{{problem.id}}">SONRA ÇÖZ</div><span>veya</span><div class="button se" data-id="{{problem.id}}">CEVAP GÖNDER</div>');
+		}else if('{{sta}}' == '(Çözülecek)'){
+			document.write('<div class="button se" style="width:100%" data-id="{{problem.id}}">CEVAP GÖNDER</div>');
+		}
+	</script>
+	{{/user}}
+	{{^user}}
+		<div class="button se" style="width:100%">CEVAP GÖNDER</div>
+	{{/user}}
+	<div class="answer"><input type="text"><button data-id="{{problem.id}}">&#10095;</button><span></span></div>
+<div class=clear></div>
+</div>

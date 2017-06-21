@@ -1,0 +1,19 @@
+<div class="container">
+<form action="" method="POST">
+<label>KULLANICI ADI<input type="text" name="uname" value="{{user.uname}}"></label>
+<label>ŞİFRE<input type="password" name="pass" value="{{user.pass}}"></label>
+<label>TAM AD<input type="text" name="fname" value="{{user.fname}}"></label>
+<label>HAKKINDA<textarea name="about">{{user.about}}</textarea></label>
+<label>E-POSTA<input type="text" name="email" value="{{user.email}}"></label>
+<button>KAYDET</button>
+</form>
+<script>
+	if(window.location.hash == '#e'){
+		document.write('<span>Lütfen tüm alanları doldurun.</span>');
+	}else if(window.location.hash == '#eu'){
+		document.write('<span>Başka bir kullanıcı adı seçin.</span>');
+	}else if(window.location.hash == '#em'){
+		document.write('<span>Bu e-posta adresine sahip başka bir hesap var.</span>');
+	}
+</script>
+</div>

@@ -1,0 +1,134 @@
+.container > h4 {
+	margin-top: 19px;
+	background: #30a78f;
+	font-weight: bold;
+	padding: 14px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.container > h4 span {
+	float: right;
+	-ms-transform: scale(2,3); /* IE 9 */
+	-webkit-transform: scale(2,3); /* Safari */
+	transform: scale(1.2,2);
+	margin-top: -1px;
+}
+
+.container > ul.deta {
+	font-size: 13px;
+	width: 100%;
+	height: 30px;
+	display: block;
+	border-bottom: 1px solid #c4c4c4;
+	padding: 10px 0;
+}
+
+.container > ul.deta li {
+	float: left;
+	padding: 8px 15px;
+	border-right: 1px solid #c4c4c4;
+}
+
+.container > ul.deta li a {
+	top: 0;
+	left: -7px;
+}
+
+.container > ul.deta li:nth-child(4){
+	padding-right: 0;
+	margin-right: -2px;
+	max-width: 315px;
+	overflow-x: auto;
+	overflow-y: none;
+	white-space: nowrap;
+	border: 0
+}
+
+.container > ul.deta li:nth-child(4)::-webkit-scrollbar { 
+    display: none; 
+}
+
+.container > ul.deta li:nth-child(5){
+	border: 0;
+	width: 0;
+	padding-top: 6px;
+	float: right;
+	margin-right: 137px
+}
+
+.container > .p {
+	padding: 20px 15px;
+	line-height: 20px
+}
+
+.container > .p b {
+	font-weight: bold
+}
+
+.container > span {
+	font-size: 11.3px;
+	position: absolute;
+	margin-left: -20px;
+	border-radius: 30px;
+	background: #fff;
+	padding: 14px 8px;
+	border: 6px solid #2980b9;
+}
+
+.container .button {
+	cursor: pointer;
+	background: #2980b9;
+	color: #fff;
+	width: 50%;
+	padding: 18px 0;
+	text-align: center;
+	float: left;
+	-o-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    -webkit-transition: background-color .2s;
+    transition: background-color .2s;
+}
+
+.container > .button:hover {
+	background: #3498db
+}
+
+.container .clear {
+	clear: both;
+	margin-bottom: 16px
+}
+
+.answer {
+	display: none;
+	padding-bottom: 16px
+}
+
+.answer input {
+	width: 936px;
+	height: 30px;
+	padding: 5px 10px;
+	font-size: 14px;
+}
+
+.answer button {
+	cursor: pointer;
+	background: #8e44ad;
+	color: #fff;
+	font-weight: bold;
+	font-size: 22px;
+	width: 40px;
+	border: 0;
+	float: right;
+	height: 44px;
+}
+
+.answer span {
+	display: none;
+	background: #ecf0f1;
+	width: 100%;
+	text-align: center;
+	padding: 16px 0;
+	font-weight: bold;
+	margin-top: 12px;
+}

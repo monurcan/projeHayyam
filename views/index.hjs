@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{ title }}</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400' rel='stylesheet' type='text/css'>
+	<link rel='stylesheet' href='/css/style.css' />
+	{{#style}}
+  	<link rel='stylesheet' href='/css/{{style}}.css' />
+	{{/style}}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  	<script src="/js/script.js"></script>
+	{{#script}}
+  	<script src="/js/{{script}}.js"></script>
+	{{/script}}</head>
+<body>
+	<div id="wr">
+	<header><div class="container">
+		<a href="/"><div class="logo">proje<span>Hayyam</span></div></a>
+		<ul class="menu">
+			<li><a href="/about">HAKKINDA</a></li>
+			<li><a href="/search?pg=1">ARŞİV</a></li>
+			<li><a href="/search?pg=1&sort=hit">POPÜLER</a></li>
+			<li><a href="/news">HABERLER</a></li>
+			{{#user}}
+			<li class="drop">HESABIM &nbsp;&#x25BE;
+				<ul class="drop">
+					<li><a href="/profile#">Çözdüklerim</a></li>
+					<li><a href="/profile/solveafter">Sonra Çözülecekler</a></li>
+					<li><a href="/profile#friends">Arkadaşlar</a></li>
+					<li><a href="/profile/settings">Hesap Ayarları</a></li>
+					<li><a href="/logout">Çıkış Yap</a></li>
+				</ul>
+			</li>
+			{{/user}}
+			{{^user}}
+			<li><a href="/login">GİRİŞ YAP</a></li>
+			<li><a href="/register">KAYIT OL</a></li>
+			{{/user}}
+		</ul>
+		<form action="/search" method="get">
+			<input type="text" name="src" placeholder="Arama yap...">
+		</form>
+	</div></header>
+	{{>content}}
+	</div>
+	<footer>
+		<div class="container">
+			<div class="l"><h4>projeHayyam</h4>
+			<span>projeHayyam, programlama ve matematik problemlerinin barındırıldığı içerik platformudur.<span>Bu sayfa tasarım ve içeriği Creative Commons Attribution 3.0 Lisansıyla koruma altına alınmıştır ve sorular BSD lisansı ile lisanlanmıştır. Geliştirici: Mehmet Onurcan KAYA</span></span></div>
+			<ul class="r">
+				<li>
+					<h4>TOPLULUK</h4>
+					<span><a href="#">Facebook</a></span>
+					<span><a href="#">Twitter</a></span>
+					<span><a href="#">G+ topluluğu</a></span>
+					<span><a href="#">bwallo.</a></span>
+				</li>
+				<li>
+					<h4>HUKUKİ</h4>
+					<span><a href="#">Telif Hakları</a></span>
+					<span><a href="#">Gizlilik Politikası</a></span>
+					<span><a href="#">Çerez Kullanımı</a></span>
+				</li>
+				<li>
+				<h4>DİĞER</h4>
+					<span><a href="#">Soru Gönder</a></span>
+					<span><a href="#">Logo</a></span>
+					<span><a href="#">Geliştirici</a></span>
+					<span><a href="#">Blog</a></span>
+					<span><a href="#">İletişim</a></span>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

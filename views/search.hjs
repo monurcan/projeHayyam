@@ -1,0 +1,38 @@
+<div class=container>
+<div class="s"><form action="/search" method="GET">
+	<input type="text" name="src" placeholder="#etiket_ismi veya başlık üzerinden soru aratın..." value='{{sval}}' autofocus>
+	<input value="ARA" type="submit">
+</form></div>
+	<table>
+		<tr>
+			<td>#<span><a>&#9650;</a><br><a href="/">&#9660;</a></span></td>
+			<td>Başlık</td>
+			<td>Etiketler</td>
+			<td>Çözülme<span><a href="#">&#9650;</a><br><a href="#">&#9660;</a></span></td>
+			<td>Zorluk<span><a href="#">&#9650;</a><br><a href="#">&#9660;</a></span></td>
+		</tr>
+		{{#problems}}
+		<tr>
+			<td><a href="/problem/{{id}}">{{id}}</a></td>
+			<td><a href="/problem/{{id}}">{{title}}</a></td>
+			<td>
+			{{#tags}}
+			<a href="/search?src=[{{name}}]" class="tag {{css}}">{{name}}</a>
+			{{/tags}}
+			</td>
+			<td><a href="/problem/{{id}}">{{solved}}</a></td>
+			<td>{{diff}}</td>
+		</tr>
+		{{/problems}}
+		{{^problems}}
+			<div class="ns">
+				<h3>HİÇ SONUÇ BULUNAMADI</h3>
+				<span>Lütfen arama kriterlerinizi biraz daha genişletin.</span>
+			</div>
+		{{/problems}}
+	</table>
+	<ul class="page">
+		{{pn}}
+	</ul>
+	<br><br><br><br>
+</div>

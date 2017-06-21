@@ -1,0 +1,35 @@
+<div class="s"><div class="container">
+<h1>Programlama ve matematik üzerine problemler...</h1>
+<span>proje<i>Hayyam</i>, programlama ya da sadece matematik ile çözebileceğiniz problemleri barındıran bir içerik platformudur. Tamamen ücretsizdir ve öyle kalacaktır.</span>
+<form action="/search" method="GET">
+<input type="text" name="src" placeholder="#etiket_ismi veya başlık üzerinden soru aratın..."><input value="ARA" type="submit">
+</form>
+</div></div>
+<div class=container>
+	<table>
+		<tr>
+			<td>#<span><a href="/search?src=+&sort=id">&#9650;</a><br><a href="/search?src=+&sort=idx">&#9660;</a></span></td>
+			<td>Başlık</td>
+			<td>Etiketler</td>
+			<td>Çözülme<span><a href="/search?src=+&sort=solved">&#9650;</a><br><a href="/search?src=+&sort=solvedx">&#9660;</a></span></td>
+			<td>Zorluk<span><a href="/search?src=+&sort=diff">&#9650;</a><br><a href="/search?src=+&sort=diffx">&#9660;</a></span></td>
+		</tr>
+		{{#problems}}
+		<tr>
+			<td><a href="/problem/{{id}}">{{id}}</a></td>
+			<td><a href="/problem/{{id}}">{{title}}</a></td>
+			<td>
+			{{#tags}}
+			<a href="/search?src=[{{name}}]" class="tag {{css}}">{{name}}</a>
+			{{/tags}}
+			</td>
+			<td><a href="/problem/{{id}}">{{solved}}</a></td>
+			<td>{{diff}}</td>
+		</tr>
+		{{/problems}}
+	</table>
+	<ul class="page">
+		{{pn}}
+	</ul>
+	<br><br><br><br>
+</div>

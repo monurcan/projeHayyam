@@ -1,0 +1,15 @@
+<div class="container">
+{{#posts}}
+<article {{#fs}}class="fs"{{/fs}}>
+<span>{{date}}</span>
+<h3>
+	{{#fs}}{{title}}{{/fs}}
+	{{^fs}}<a href="/news/{{id}}">{{title}}</a>{{/fs}}
+</h3>
+<div class="p">{{{content}}}</div>
+</article>
+{{/posts}}
+{{#fs}}
+	<a href="/news" class="aleft">Blogtaki Tüm Yazılar</a>
+{{/fs}}
+</div>

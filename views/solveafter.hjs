@@ -1,0 +1,26 @@
+<div class="container">
+<div class="he">
+	<h1>Sonra Çözülecekler</h1>
+</div>
+<table><tr><td></td><td></td><td></td><td></td><td></td></tr>
+	{{#problems}}
+	<tr>
+		<td data-id="{{id}}">x</td>
+		<td><a href="/problem/{{id}}">{{title}}</a></td>
+		<td>
+		{{#tags}}
+		<a href="/search?src=[{{name}}]" class="tag {{css}}">{{name}}</a>
+		{{/tags}}
+		</td>
+		<td><a href="/problem/{{id}}">{{solved}}</a></td>
+		<td>{{diff}}</td>
+	</tr>
+	{{/problems}}
+	{{^problems}}
+		<div class="ns">
+			<h3>SONRA ÇÖZÜLECEK SORU YOK</h3>
+			<span>Sorulara bir gözatın ve ileride çözmek isteyebileceklerini buraya kaydedin.</span>
+		</div>
+	{{/problems}}
+</table>
+</div>

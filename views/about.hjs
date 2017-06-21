@@ -1,0 +1,11 @@
+<div class="container" style="line-height:23px"><br><img src="/img/hayyam.png" style="float:left;margin-right:12px"><br>projeHayyam, çeşitli zorluklarda programlama ve matematik problemlerinin barındırıldığı içerik platformudur. <br><br>Kod yazarak problemleri çözebilirsiniz. <br><br>Bazı sorular salt programlama problemiyken bazıları salt matematik bazılarıysa matematik ve programlamanın bir arada kullanılmasını gerektiren problemlerdir. Sitedeki problemleri "matematik ∪ programlama" olarak gösterebiliriz, sık olarak da "matematik ∩ programlama" kategorisinde problemler göreceksiniz.<br><br>Problemin çözümünü bulmak için istediğiniz aracı kullanabilirsiniz, programlama dili seçimi vs. size kalmıştır.<br><br><br><b style="font-weight:bold">Örnek soru ve çözüm</b><br><br>|| Eğer 10'dan küçük, 3 ve 5'in katları olan doğal sayıları listelersek, 3, 5, 6 ve 9 sayılarını elde ederiz. Bu katların toplamı 23'tür.<br>||<br>|| 1000'den küçük, 3 ve 5'in katlarının toplamını bulun. (Buradaki veya eklemi inclusive manada)<br><br>Python<br><br>|| print sum(x for x in xrange(1, 1000) if x%3==0 or x%5==0)<br><br>C++<br><br>|| #include <iostream><br>
+|| using namespace std;<br>
+|| int main( ){<br>
+|| &nbsp;int sum = 0;<br>
+|| &nbsp;&nbsp;for(int i = 0; i < 1000; i++)<br>
+|| &nbsp;&nbsp;&nbsp;&nbsp;if( i % 3 == 0 || i % 5 == 0 )<br>
+|| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum += i;<br>
+|| &nbsp;&nbsp;cout << sum << endl;<br>
+|| &nbsp;&nbsp;return 0;<br>
+|| }<br><br><b style="font-weight:bold">Hesap açma</b><br><br>Cevaplarınızı kaydetmek, arkadaş edinmek gibi işlemler için siteye kayıt olabilirsiniz.<br><br><b style="font-weight:bold">Katkıda bulunun</b><br><br><a href="https://www.facebook.com/main.jsf/about">Bu adresten (https://www.facebook.com/main.jsf/about)</a> siteyle ilgili görüşlerinizi dile getirip, yeni soru gönderebilirsiniz.<br><br><b style="font-weight:bold">Daha fazla</b><br><br>Site scripti Express frameworkü üzerinde node.js kullanılarak Mehmet Onurcan KAYA tarafından 2015 yılında yazılmıştır. Sitedeki problemler BSD Lisansıyla, site tasarımı ve scripti ise Creative Commons Attribution 3.0 Lisansıyla koruma altına alınmıştır. Kaynak belirterek kullanabilirsiniz.</div>
+<br><br><br>

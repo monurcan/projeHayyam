@@ -1,0 +1,113 @@
+@-webkit-keyframes br {
+    6% {border-color: #ea5f51}
+    16% {border-color: #ea5f51}
+    27% {border-color: #eeeeef}
+}
+
+@keyframes br {
+    6% {border-color: #ea5f51}
+    16% {border-color: #ea5f51}
+    27% {border-color: #eeeeef}
+    30% {border-color: #eeeeef}
+	34% {border-color: #ea5f51}
+    50% {border-color: #ea5f51}
+    54% {border-color: #eeeeef}
+} 
+
+.s {
+	margin-top: -62px;
+	padding-top: 140px;
+	height: 330px;
+	text-align: center;
+	margin-bottom: 27px;
+	color: #fff;
+}
+
+.s:before {
+	content: '';
+	background-image: url(../img/b1.png);
+	background-size: cover;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0
+}
+
+.s h1 {
+	font-weight: bold;
+	font-size: 26px;
+	margin-top: 20%;
+	margin-bottom: 25px
+}
+
+.s form {
+	background: #eeeeef;
+	display: inline-block;
+	border: 8px solid #eeeeef;
+	border-radius: 7px;
+	width: 350px;
+}
+
+.s form.e {
+	-webkit-animation: br 4s 2;
+    animation: br 4s 2;
+}
+
+.s form hr {
+	position: absolute;
+	border: 0;
+	border-top: 1px solid #ccc;
+	width: 338px;
+	margin-left: 7px;
+	margin-top: 1px;
+}
+
+.s form input {
+	font-size: 14px;
+	width: 351px;
+	padding: 12px;
+	display: block;
+	border: 0;
+	border-radius: 0 0 7px 7px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.s form input:nth-child(1){
+	border-radius: 7px 7px 0 0;
+}
+
+.s form input[type=submit]{
+	cursor: pointer;
+	position: absolute;
+	width: 326px;
+	margin-top: 23px;
+	background: #2ecc71;
+	border-radius: 7px;
+	color: #fff;
+	font-weight: bold;
+	margin-left: -8px;
+	border: 8px solid #2ecc71;
+	box-sizing: initial;
+	-webkit-box-sizing: initial;
+	-moz-box-sizing: initial;
+}
+
+.s form input[type=submit]:hover {
+	background: #29b464;
+	border-color: #29b464;
+	-o-transition: background-color .2s, border-color .2s;
+    -moz-transition: background-color .2s, border-color .2s;
+    -webkit-transition: background-color .2s, border-color .2s;
+    transition: background-color .2s, border-color .2s;
+}
+
+.s .container > span {
+	display: block;
+	margin-top: 89px;
+}
+.s .container span a {
+	margin: 0 4px;
+}

@@ -1,0 +1,71 @@
+<div class="container">
+<div class="he">
+	<h1>{{users.fname}}</h1>
+	{{#addf}}
+	<div class="button" data-id="{{users._id}}"><span>+</span>Arkadaş olarak ekle</div>
+	{{/addf}}
+</div>
+<ul class="deta">
+	<li>@{{users.uname}}</li>
+	<li>Çözdüğü Soru Sayısı: <i>{{users.solved}}</i></li>
+	<li>Arkadaş Sayısı: <script>document.write(Math.round(('{{users.friends}}'.length+1)/16))</script></li>
+	<li>22</li>
+	<li></li>
+</ul>
+<div class="ab">
+	<h3>HAKKINDA</h3>
+	<div class="p">
+		<script>
+			if(String('{{users.about}}').length > 250){
+				document.write('<span>[...]</span>');
+			}
+		</script>
+		{{{users.about}}}
+	</div>
+</div>
+<div class="fr">
+	<h3>ARKADAŞLAR</h3>
+	<ul>
+		<script>
+			if(('{{users.friends}}'.length+1)/16 > 7){
+				document.write('<a href="#friends"><li class="sm">...</li></a>');
+			}
+		</script>
+		{{#friends}}
+			<li><a href="/profile/{{uname}}"><img src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png"><span>{{fname}}</span></a></li>
+		{{/friends}}
+		{{^friends}}
+		<div class="ns">
+				<h3>ARKADAŞ BULUNAMADI</h3>
+				<span>Bu kullanıcının hiç arkadaşı yok.</span>
+			</div>
+		{{/friends}}
+	</ul>
+</div>
+<div style="clear:both"></div>
+<div class="slv">
+	<h3>ÇÖZDÜĞÜ SORULAR</h3>
+	<table><tr><td></td><td></td><td></td><td></td><td></td></tr>
+		{{#problems}}
+		<tr>
+			<td><a href="/problem/{{id}}">{{id}}</a></td>
+			<td><a href="/problem/{{id}}">{{title}}</a></td>
+			<td>
+			{{#tags}}
+			<a href="/search?src=[{{name}}]" class="tag {{css}}">{{name}}</a>
+			{{/tags}}
+			</td>
+			<td><a href="/problem/{{id}}">{{solved}}</a></td>
+			<td>{{diff}}</td>
+		</tr>
+		{{/problems}}
+		{{^problems}}
+			<div class="ns">
+				<h3>ÇÖZÜLEN SORU BULUNAMADI</h3>
+				<span>Bu kullanıcı hiç soru çözmemiş.</span>
+			</div>
+		{{/problems}}
+	</table>
+</div>
+<div style="clear:both"></div>
+</div>
