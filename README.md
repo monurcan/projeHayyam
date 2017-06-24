@@ -6,7 +6,7 @@ Ekran görüntüleri:
 https://www.dropbox.com/sh/3vgly63v5i3v0sy/AADpLZZ3311XSpg-Yu7qwxKGa?dl=0
 
 
-**mongoDB**
+**mongoDB** (raw halinden kaydedin)
 
 **news**
 
